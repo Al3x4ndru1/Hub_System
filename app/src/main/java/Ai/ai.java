@@ -74,11 +74,7 @@ public class ai {
             }
 
             }
-
-
-
     }
-
 
 }
 
