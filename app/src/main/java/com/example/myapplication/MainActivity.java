@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
         text= findViewById(R.id.textInputEditText);
          */
     }
-
+    public void ADHD(){
+        setContentView(R.layout.adhd_questions);
+    }
     public void chat(View view){
         setContentView(R.layout.chat_layout);
     }

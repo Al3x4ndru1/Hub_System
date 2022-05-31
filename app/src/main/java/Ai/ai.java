@@ -3,6 +3,8 @@ package Ai;
 
 import android.view.View;
 
+import com.example.myapplication.MainActivity;
+
 public class ai {
     public static void main(String[] args){
         String s= "anxious and anxiety and depressed";
@@ -27,6 +29,7 @@ public class ai {
                 result_dys = String.valueOf(Dyslexsia.valueOf(str));
 
             } catch (IllegalArgumentException e) {
+                System.out.println("Erore");
 
             }
             if (result_adhd != null) {
@@ -40,18 +43,40 @@ public class ai {
             }
         }
         int max = Math.max(adhdcount, Math.max(dyslescount, autismcount));
-
-        if (max < 3) {
+        System.out.println(max);
+        if (max == dyslescount) {
             View view = null;
             //new activity(view);
-            System.out.println("Chat only");
+            System.out.println("Dyslecsic");
         } else {
-            if (max < 6) {
-                System.out.println("Option");
+            if (max == autismcount) {
+                System.out.println("Autist");
             } else {
-                System.out.println("Profesional");
+                System.out.println("ADHD");
+                MainActivity a = new MainActivity();
+                a.ADHD();
             }
         }
+    }
+
+
+
+    public static void stars(float s,float s1, float s2){
+
+        if((s+s1+s2)/3.0<=1.3){
+            System.out.println("Chat only");
+        }
+            else{
+            if((s+s1+s2)/3.0<=2.2){
+                System.out.println("Option");
+            }else {
+                System.out.println("Profesional");
+            }
+
+            }
+
+
+
     }
 
 
