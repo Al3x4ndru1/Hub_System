@@ -16,6 +16,19 @@
     <string name="tells_us_your_behave">Tells us your behave</string>
     <string name="would_you_like_to_see_a_profesional">Would you like to see a profesional?</string>
     <string name="submit">Submit</string>
+    <string name="how_are_you_feeling">How are you feeling?</string>
+    <string name="how_intense_are_your_challenges">How intense are your challenges</string>
+    <string name="tell_us_what_s_bothering_you">Tell us what\'s bothering you</string>
+    <string name="could_you_please_briefly_describe_your_daily_challenges">Could you please briefly describe your daily challenges</string>
+    <string name="do_you_want_to_talk_with_another_person">Do you want to talk with another person?</string>
+    <string name="if_you_wish_we_could_connect_you_with_another_person_who_has_been_successful_in_dealing_with_your_condition">If you wish , we could connect you with another person who has been successful in dealing with your condition</string>
+    <string name="if_you_wish_we_could_present_with_a_triage_of_professional_who_can_provide_you_necessary_support_in_dealing_with_your_condition">If you wish , we could present with a triage of professional who can provide you necessary support in dealing with your condition</string>
+    <string name="professional_support">Professional Support</string>
+    <string name="doctor">Doctor</string>
+    <string name="nurse">Nurse</string>
+    <string name="speech_language_therapist">Speech Language Therapist</string>
+    <string name="art_therapist">Art therapist</string>
+    <string name="psychologist">Psychologist</string>
 
 
 </resources>

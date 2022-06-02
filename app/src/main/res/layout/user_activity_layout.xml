@@ -26,7 +26,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="33dp"
             android:layout_marginBottom="24dp"
-            android:text="How intense are your feelings?"
+            android:text="@string/how_intense_are_your_challenges"
             android:textColor="@color/white"
             android:textSize="26sp"
             android:visibility="visible"
@@ -36,23 +36,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
             tools:ignore="MissingConstraints" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="335dp"
-            android:layout_height="255dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="20dp"
-            tools:ignore="MissingConstraints" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
             android:layout_width="300dp"
             android:layout_height="185dp"
             android:background="@color/white"
-            android:hint="Tell us what's bothering you"
+            android:hint="@string/tell_us_what_s_bothering_you"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="20dp"
             android:minWidth="4dp"
@@ -76,13 +66,13 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="9dp"
             android:layout_marginBottom="40dp"
-            android:text="How are you feeling?"
+            android:text="@string/could_you_please_briefly_describe_your_daily_challenges"
             android:textColor="@color/white"
             android:textSize="27sp"
             app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button5"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="73dp" />
+            tools:ignore="MissingConstraints" />
 
         <RatingBar
 
@@ -113,27 +103,6 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="0dp" />
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/textView3"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_alignParentStart="true"-->
-        <!--            android:layout_alignParentTop="true"-->
-        <!--            android:layout_centerHorizontal="true"-->
-        <!--            android:layout_marginStart="45dp"-->
-        <!--            android:layout_marginTop="20dp"-->
-        <!--            android:layout_marginEnd="45dp"-->
-        <!--            android:layout_marginBottom="16dp"-->
-        <!--            android:text="How depressed are you feeling?"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textSize="26sp"-->
-        <!--            android:visibility="visible"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/ratingBar2"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/ratingBar"-->
-        <!--            tools:ignore="MissingConstraints" />-->
-
         <FrameLayout
             android:id="@+id/frameLayout"
             android:layout_width="25dp"
@@ -147,51 +116,6 @@
                 android:src="@drawable/ic_baseline_info_24"
                 app:tint="@color/white" />
         </FrameLayout>
-
-        <!--        <RatingBar-->
-        <!--            android:id="@+id/ratingBar2"-->
-        <!--            android:layout_width="141dp"-->
-        <!--            android:layout_height="63dp"-->
-        <!--            android:layout_marginTop="6dp"-->
-        <!--            android:layout_marginBottom="9dp"-->
-        <!--            android:progressBackgroundTint="@color/white"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/textView4"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/textView3"-->
-        <!--            tools:ignore="MissingConstraints" />-->
-
-        <!--        <TextView-->
-        <!--            android:id="@+id/textView4"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_alignParentStart="true"-->
-        <!--            android:layout_alignParentTop="true"-->
-        <!--            android:layout_centerHorizontal="true"-->
-        <!--            android:layout_marginTop="9dp"-->
-        <!--            android:layout_marginBottom="15dp"-->
-        <!--            android:text="How restless are you feeling?"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textSize="26sp"-->
-        <!--            android:visibility="visible"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/ratingBar3"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/ratingBar2"-->
-        <!--            tools:ignore="MissingConstraints" />-->
-
-        <!--        <RatingBar-->
-        <!--            android:id="@+id/ratingBar3"-->
-        <!--            android:layout_width="141dp"-->
-        <!--            android:layout_height="63dp"-->
-        <!--            android:layout_marginTop="16dp"-->
-        <!--            android:layout_marginBottom="15dp"-->
-        <!--            android:progressBackgroundTint="@color/white"-->
-        <!--            app:layout_constraintBottom_toBottomOf="@id/button5"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/textView4"-->
-        <!--            tools:ignore="MissingConstraints" />-->
 
 
         <Button

@@ -3,8 +3,6 @@ package Ai;
 
 import android.view.View;
 
-import com.example.myapplication.MainActivity;
-
 public class ai {
     public static void main(String[] args){
         String s= "anxious and anxiety and depressed";
@@ -53,12 +51,9 @@ public class ai {
                 System.out.println("Autist");
             } else {
                 System.out.println("ADHD");
-                MainActivity a = new MainActivity();
-                a.ADHD();
             }
         }
     }
-
 
 
     public static void stars(float s,float s1, float s2){

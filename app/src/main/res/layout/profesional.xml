@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -15,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"
-        android:text="Professional Support"
+        android:text="@string/professional_support"
         android:textColor="@color/white"
         android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,22 +27,22 @@
         android:id="@+id/doctor"
         android:layout_width="321dp"
         android:layout_height="75dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:onClick="chat"
-        android:text="Doctor"
+        android:text="@string/doctor"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/Nurse"
         android:layout_width="321dp"
         android:layout_height="75dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="40dp"
         android:onClick="chat"
-        android:text="Nurse"
+        android:text="@string/nurse"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/doctor"
         app:layout_constraintHorizontal_bias="1.0"
@@ -56,9 +55,9 @@
         android:id="@+id/Gp"
         android:layout_width="321dp"
         android:layout_height="75dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:onClick="chat"
-        android:text="GP"
+        android:text="@string/art_therapist"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/Nurse"
         app:layout_constraintHorizontal_bias="0.844"
@@ -73,14 +72,31 @@
         android:layout_height="75dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="50dp"
         android:onClick="chat"
-        android:text="Speech Language Therapist"
+        android:text="@string/speech_language_therapist"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Gp"
         tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/Psihologist"
+        android:layout_width="321dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="chat"
+        android:text="@string/psychologist"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spech"
+        tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

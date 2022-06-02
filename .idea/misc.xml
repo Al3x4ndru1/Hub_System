@@ -10,8 +10,10 @@
         <entry key="app/src/main/res/layout/adhd_questions.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/autism_question.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/chat_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/firstlayout.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/profesional.xml" value="0.17325227963525835" />
+        <entry key="app/src/main/res/layout/profesional.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/register_layout.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/talking.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/user_activity_layout.xml" value="0.2" />
       </map>

@@ -14,10 +14,10 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="321dp"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:layout_marginEnd="0dp"
-            android:text="Do you want to talk with another person?"
+            android:text="@string/if_you_wish_we_could_connect_you_with_another_person_who_has_been_successful_in_dealing_with_your_condition"
             android:textSize="20sp"
             android:onClick="chat"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,13 +28,16 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="321dp"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="90dp"
-            android:text="@string/would_you_like_to_see_a_profesional"
-            android:textSize="20sp"
+            android:layout_marginEnd="0dp"
             android:onClick="profesional"
+            android:text="@string/if_you_wish_we_could_present_with_a_triage_of_professional_who_can_provide_you_necessary_support_in_dealing_with_your_condition"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
-            tools:layout_editor_absoluteX="47dp"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

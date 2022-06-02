@@ -1,35 +1,44 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import java.util.Random;
-
 
 public class MainActivity extends AppCompatActivity {
     private TextInputLayout text;
+    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int x = Random();
-        if (1 % 2 == 0) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-        }
-        else
-        {   super.onCreate(savedInstanceState);
-            setContentView(R.layout.login_layout);
-        }
+       super.onCreate(savedInstanceState);
+
+       handler.postDelayed(new Runnable() {
+           @Override
+           public void run() {
+               setContentView(R.layout.firstlayout);
+
+           }
+       },0);
+
+
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                setContentView(R.layout.login_layout);
+
+            }
+        },7000);
+
+
 
     }
-    public static int Random() {
-        Random x = new Random();
-        return x.nextInt(100);
-    }
+
     public void userlayout(View view){
         setContentView(R.layout.user_activity_layout);
 
@@ -37,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void activityAfterLogIn(View view){
         setContentView(R.layout.activity_main);
-        System.out.println(R.id.username);
+    }
+
+    public void registration(View view){
+        setContentView(R.layout.register_layout);
     }
 
     public void text(View view) {
@@ -50,9 +62,7 @@ public class MainActivity extends AppCompatActivity {
         text= findViewById(R.id.textInputEditText);
          */
     }
-    public void ADHD(){
-        setContentView(R.layout.adhd_questions);
-    }
+
     public void chat(View view){
         setContentView(R.layout.chat_layout);
     }
